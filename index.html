@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online HTML, CSS, JAVASCRIPT Editor</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon"
+        href="https://cdn.imgbin.com/23/24/23/imgbin-computer-icons-source-code-editor-others-Q2atxz4WTTeAL3mFwqUKHGmxZ.jpg">
+    <script src="https://kit.fontawesome.com/2278f023f0.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="left">
+            <label for="">HTML <i class="fa-brands fa-html5" style="color: #fa7000;"></i></label>
+            <textarea class="html-code"></textarea>
+
+            <label for="">CSS <i class="fa-brands fa-css3-alt" style="color: #005eff;"></i></label>
+            <textarea class="css-code"></textarea>
+
+            <label for="">JAVASCRIPT <i class="fa-brands fa-js" style="color: #fff700;"></i></label>
+            <textarea class="js-code"></textarea>
+        </div>
+        <div class="right">
+            <h3>Online HTML, CSS, JAVASCRIPT Editor</h3>
+            <div class="btn">
+                <span class="left-btn">
+                    <i class="fa-solid fa-circle" style="color: #ff0000;"></i>
+                    <i class="fa-solid fa-circle" style="color: #fff700;"></i>
+                    <i class="fa-solid fa-circle" style="color: #00ff04;"></i>
+                </span>
+                <span class="right-btn">
+                    <button onClick="run()" class="download">Run <i class="fa-solid fa-play"></i></button>
+                    <button onclick="downloadCode()" class="download">Download <i class="fa-solid fa-download"
+                            style="color: #005eff;"></i></button>
+                    <button onClick="changeTheme()" class="theme"><i class="fa-solid fa-moon"></i></button>
+
+                </span>
+
+            </div>
+
+            <iframe id="result" class="result"></iframe>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
